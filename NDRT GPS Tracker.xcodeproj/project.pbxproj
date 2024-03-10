@@ -12,6 +12,12 @@
 		499CF2D323261AB200D1994C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499CF2D123261AB200D1994C /* Main.storyboard */; };
 		499CF2D523261AB400D1994C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 499CF2D423261AB400D1994C /* Assets.xcassets */; };
 		499CF2D823261AB400D1994C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499CF2D623261AB400D1994C /* LaunchScreen.storyboard */; };
+		CB38A55E2B9E12D0003A1CA5 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB38A55D2B9E12D0003A1CA5 /* BluetoothManager.swift */; };
+		CB38A5602B9E1399003A1CA5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB38A55F2B9E1399003A1CA5 /* LocationManager.swift */; };
+		CB38A5622B9E13E1003A1CA5 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB38A5612B9E13E1003A1CA5 /* ViewControllerExtensions.swift */; };
+		CB38A5642B9E1513003A1CA5 /* Backup.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CB38A5632B9E1513003A1CA5 /* Backup.rtf */; };
+		CB38A5662B9E22D2003A1CA5 /* StyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB38A5652B9E22D2003A1CA5 /* StyleManager.swift */; };
+		CB38A5682B9E2AF9003A1CA5 /* BearingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB38A5672B9E2AF9003A1CA5 /* BearingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		499CF2D423261AB400D1994C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		499CF2D723261AB400D1994C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		499CF2D923261AB400D1994C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB38A55D2B9E12D0003A1CA5 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		CB38A55F2B9E1399003A1CA5 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		CB38A5612B9E13E1003A1CA5 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		CB38A5632B9E1513003A1CA5 /* Backup.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Backup.rtf; sourceTree = "<group>"; };
+		CB38A5652B9E22D2003A1CA5 /* StyleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleManager.swift; sourceTree = "<group>"; };
+		CB38A5672B9E2AF9003A1CA5 /* BearingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +50,7 @@
 		499CF2C123261AB200D1994C = {
 			isa = PBXGroup;
 			children = (
+				CB38A5632B9E1513003A1CA5 /* Backup.rtf */,
 				499CF2CC23261AB200D1994C /* NDRT GPS Tracker */,
 				499CF2CB23261AB200D1994C /* Products */,
 			);
@@ -55,11 +68,16 @@
 			isa = PBXGroup;
 			children = (
 				499CF2CD23261AB200D1994C /* AppDelegate.swift */,
+				CB38A55D2B9E12D0003A1CA5 /* BluetoothManager.swift */,
+				CB38A5652B9E22D2003A1CA5 /* StyleManager.swift */,
+				CB38A5672B9E2AF9003A1CA5 /* BearingManager.swift */,
+				CB38A55F2B9E1399003A1CA5 /* LocationManager.swift */,
+				CB38A5612B9E13E1003A1CA5 /* ViewControllerExtensions.swift */,
 				499CF2CF23261AB200D1994C /* ViewController.swift */,
-				499CF2D123261AB200D1994C /* Main.storyboard */,
-				499CF2D423261AB400D1994C /* Assets.xcassets */,
-				499CF2D623261AB400D1994C /* LaunchScreen.storyboard */,
 				499CF2D923261AB400D1994C /* Info.plist */,
+				499CF2D423261AB400D1994C /* Assets.xcassets */,
+				499CF2D123261AB200D1994C /* Main.storyboard */,
+				499CF2D623261AB400D1994C /* LaunchScreen.storyboard */,
 			);
 			path = "NDRT GPS Tracker";
 			sourceTree = "<group>";
@@ -130,6 +148,7 @@
 			files = (
 				499CF2D823261AB400D1994C /* LaunchScreen.storyboard in Resources */,
 				499CF2D523261AB400D1994C /* Assets.xcassets in Resources */,
+				CB38A5642B9E1513003A1CA5 /* Backup.rtf in Resources */,
 				499CF2D323261AB200D1994C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,8 +160,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB38A5602B9E1399003A1CA5 /* LocationManager.swift in Sources */,
 				499CF2D023261AB200D1994C /* ViewController.swift in Sources */,
+				CB38A55E2B9E12D0003A1CA5 /* BluetoothManager.swift in Sources */,
+				CB38A5622B9E13E1003A1CA5 /* ViewControllerExtensions.swift in Sources */,
 				499CF2CE23261AB200D1994C /* AppDelegate.swift in Sources */,
+				CB38A5682B9E2AF9003A1CA5 /* BearingManager.swift in Sources */,
+				CB38A5662B9E22D2003A1CA5 /* StyleManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
